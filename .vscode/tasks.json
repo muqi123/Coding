@@ -11,9 +11,9 @@
                 "-std=c++17",
                 "-stdlib=libc++",
                 "-g",
-                "${fileDirname}/main.cpp",
+                "${fileDirname}/${fileBasenameNoExtension}.cpp",
                 "-o",
-                "${fileDirname}/out/main.out"
+                "${fileDirname}/out/${fileBasenameNoExtension}.out"
             ],
             "options": {
                 "cwd": "/usr/bin"
