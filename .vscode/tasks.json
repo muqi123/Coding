@@ -20,7 +20,15 @@
             },
             "problemMatcher": [
                 "$gcc"
-            ],
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "Run build result",
+            "command": "${fileDirname}/out/${fileBasenameNoExtension}.out",
+            "dependsOrder": "sequence",
+            "dependsOn": ["clang++ build active file"]
+            ,
             "group": {
                 "kind": "build",
                 "isDefault": true
